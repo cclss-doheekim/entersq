@@ -8,3 +8,7 @@
 - 위클리 / 월간 회고
 - 프로세스·운영 정책
 - 스쿼드 공용 리소스 (용어집, 의사결정 기록 등)
+
+## 📂 현재 문서
+
+- [`chat-project-setup-byeol.md`](./chat-project-setup-byeol.md) — 별 채팅 Project 세팅/운영 가이드
