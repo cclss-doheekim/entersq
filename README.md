@@ -1,45 +1,46 @@
-# 별(Byeol, 가칭) — AllKpop Sub Project
+# entersq — Squad Docs
 
-> 프로젝트명은 **가칭**입니다. 정식 네이밍은 MVP 베타 오픈 전 확정 예정.
+Squad 내부 프로젝트 문서(로드맵, PRD, 미팅록 등)를 보관하고 관리하는 레포지토리입니다.
 
-올케이팝의 "읽기 중심" 유저 경험을 "참여·체류 중심"으로 전환하기 위한 팬덤 기여형 메타 게임 생태계 프로젝트입니다.
-
-## 📁 폴더 구조
+## 📁 레포 구조
 
 ```
-Byeol-Project/
-├── README.md                         ← 이 문서 (프로젝트 인덱스)
-├── TEAM_SHARE.md                     ← 팀 공유용 요약본
-├── 01_Roadmap/
-│   ├── Roadmap_v0.1.md               (2026-04-06, "Planet" 시절)
-│   ├── Roadmap_v0.2.md               (2026-04-15, Byeol 전환 + 팬덤 기여 도입)
-│   └── Roadmap_v0.3_CURRENT.md       ★ 최신
-├── 02_PRD/
-│   ├── PRD_v0.1.md                   (2026-04-06)
-│   ├── PRD_v0.2.md                   (2026-04-15)
-│   └── PRD_v0.3_CURRENT.md           ★ 최신
-├── 03_Meeting-Notes/
-│   └── 20260414_planet_meeting.md    (v0.2 전환 근거 미팅)
-└── _archive/                         (폐기 문서 보관용, 비어 있음)
+entersq/
+├── README.md                 ← 이 문서 (스쿼드 인덱스)
+├── _squad/                   ← 스쿼드 공통 문서 (OKR, 위클리, 정책 등)
+├── _templates/               ← 새 프로젝트 시작용 템플릿
+│   └── project/              ← 프로젝트 스켈레톤 (README + 기본 폴더)
+├── byeol/                    ← 🌟 별(Byeol, 가칭) — AllKpop 서브 프로젝트
+│   ├── README.md
+│   ├── TEAM_SHARE.md
+│   ├── 01_Roadmap/
+│   ├── 02_PRD/
+│   ├── 03_Meeting-Notes/
+│   └── _archive/
+└── (future projects...)
 ```
 
-## 🗂 버전 히스토리
+## 🗂 프로젝트 목록
 
-| 버전 | 일자 | 핵심 변화 |
-|------|------|-----------|
-| v0.1 | 2026-04-06 | 초기안 ("Planet" 프로젝트명). 공용 플래닛 허브 + 미니게임 + 공통 보상 체계. 아티스트 테마는 Phase 4. |
-| v0.2 | 2026-04-15 | **Planet → 별(Byeol, 가칭)**. **MVP를 베타 오픈으로 명확화**. 팬덤 기여 구조를 Phase 4 → MVP로 전진. 세계관(씨앗/물/꽃) 도입. 시즌 매개체 교체 개념 추가. |
-| v0.3 | 2026-04-15 | 팀 내부 MVP 구체화 반영. **IP 페이지 9~12개 선런칭** (BLINK/ARMY/MY 등). **온보딩 플로우** 구체화(닉네임+대표팬덤+IP 팔로우). **홈 메인뷰 = 관전뷰로 재정의**. IP 페이지=3D 별 키우기. **미니게임 종료 후 기여 UX 및 랭킹 피드 포맷** 명확화. |
+| 프로젝트 | 상태 | 현재 버전 | 경로 |
+|----------|------|-----------|------|
+| 별(Byeol, 가칭) | 🟢 Active — 베타 MVP 준비 | v0.3 | [`byeol/`](./byeol) |
 
-## 🎯 현재 상태
+## 🆕 새 프로젝트 시작 가이드
 
-- **Phase 1 (베타 MVP) 타겟 런칭**: 2026-04-22
-- **최신 작업 문서**: `Roadmap_v0.3_CURRENT.md`, `PRD_v0.3_CURRENT.md`
-- **Open Questions** (v0.3 PRD 섹션 6 참고):
-  - 프로젝트 정식 명칭 확정
-  - GA 전략 (통합/전용/합산)
-  - 저작권 범위 (음원·가사·기사)
-  - IP 페이지 최종 라인업 확정
-  - 3D 에셋 제작 방식
-  - 대표 팬덤 변경 정책
-  - 공용 올케이팝 행성의 역할 정의
+1. `_templates/project/` 를 복사하여 새 프로젝트명 폴더 생성 (소문자 슬러그 권장: `project-name/`)
+2. 해당 폴더 안에 `README.md`, `01_Roadmap/`, `02_PRD/`, `03_Meeting-Notes/` 구성
+3. 이 README의 "프로젝트 목록" 표에 새 행 추가
+4. 첫 문서 커밋 후 Slack `#ch-squad-enter` 에 업데이트 공유
+
+## 📝 네이밍 규칙
+
+- 프로젝트 폴더: 소문자 슬러그 (`byeol`, `project-name`)
+- 문서 버전: `Roadmap_vX.Y.md`, `PRD_vX.Y.md` 형식 유지
+- 최신 문서: `_vX.Y_CURRENT.md` 접미사로 현재 버전 표시
+- 이전 버전: 같은 폴더에 보관 (아카이빙은 `_archive/`)
+
+## 📢 공유 채널
+
+- Slack: [#ch-squad-enter](https://publhq.slack.com/archives/C0AN99YRA92)
+- 문서 업데이트 양식은 `byeol/TEAM_SHARE.md` 참고

@@ -57,11 +57,11 @@
 
 ## 📂 문서 위치
 
-- **README (프로젝트 인덱스)**: `Byeol-Project/README.md`
-- **최신 로드맵**: `Byeol-Project/01_Roadmap/Roadmap_v0.3_CURRENT.md`
-- **최신 PRD**: `Byeol-Project/02_PRD/PRD_v0.3_CURRENT.md`
+- **README (프로젝트 인덱스)**: `byeol/README.md`
+- **최신 로드맵**: `byeol/01_Roadmap/Roadmap_v0.3_CURRENT.md`
+- **최신 PRD**: `byeol/02_PRD/PRD_v0.3_CURRENT.md`
 - 이전 버전은 각 폴더에 `v0.1`, `v0.2`로 보관되어 있습니다
-- 미팅록: `Byeol-Project/03_Meeting-Notes/20260414_planet_meeting.md`
+- 미팅록: `byeol/03_Meeting-Notes/20260414_planet_meeting.md`
 
 ---
 
